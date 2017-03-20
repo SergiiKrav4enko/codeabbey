@@ -8,14 +8,13 @@
 Ответ должен содержать N результатов, разделенных пробелами.
 """
 n = int(input())
-x_a = 0
 answer = []
 for i in range(n):
+    x_a = 0
     line = input().split()
     x = int(line[0])*int(line[1])+int(line[2])
     chislo = str(x)
     for j in range(len(chislo)):
         x_a += int(chislo[j])
     answer.append(str(x_a))
-    x_a = 0
 print(' '.join(answer))
